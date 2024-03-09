@@ -1,0 +1,42 @@
+<html>
+
+<button onclick="audio()">Play</button>
+<script>
+function audio(){
+
+const audioContext= new (window.AudioContext ||)
+
+
+
+
+
+}
+</script>
+
+<!--<button onclick="localisation()">Se Localiser</button>
+<script>
+function localisation(){
+navigator.geolocation.getCurrentPosition(
+position=>{
+console.log('Latitude: ${position.coords.latitude},Longitude: ${position.coords.longitude}'
+);
+console.log('Latitude:'+position.coords.latitude+'\nLongitude:'+position.coords.longitude);
+
+},
+error=>{
+console.error("Error getting location", error.message);}
+);}
+</script>
+
+<textarea id="ta"></textarea>
+<button onclick="sound()">Cliquer içi</button>
+
+<script>
+function sound(){
+let textToSpeak=document.getElementById("ta").value;
+const utterance =new SpeechSynthesisUtterance(textToSpeak);
+window.speechSynthesis.speak(utterance);
+}
+
+</script>-->
+</html>
